@@ -1,0 +1,13 @@
+﻿@page
+@model IndexModel
+@using Tryfan.Website.Components
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Cluster Review</h1>
+    <p>This website provides the means to deliver a finicial insite to the Cluster year!   </p>
+</div>
+@(await Html.RenderComponentAsync<FileLoader>(RenderMode.ServerPrerendered))
+
